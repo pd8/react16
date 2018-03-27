@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';    
 import logo from './logo.svg';
 import './App.css';
 
@@ -19,10 +20,18 @@ class App extends Component {
   }
 }
 
-function Welcome({user}) {
+function Welcome({ user }) {
   return (
     <h1 className="App-title">Welcome to React, {user}</h1>
   );
+}
+
+Welcome.defaultProps = {
+  user: 'unknown person...'
+}
+
+Welcome.propTypes = {
+  user: PropTypes.string
 }
 
 export default App;
