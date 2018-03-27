@@ -28,10 +28,10 @@ function Welcome({ user }) {
 
 Welcome.defaultProps = {
   user: 'unknown person...'
-}
+};
 
 Welcome.propTypes = {
   user: PropTypes.string
-}
+};
 
 export default App;
