@@ -9,6 +9,27 @@ class App extends Component {
     toggle: true
   }
 
+  componentWillMount() {
+    // can change props before initial render meaning no extra rerenders called
+  }
+
+  componentDidMount() {
+    // can target things in the render for focus manipulation etc, but does trigger a rerender
+  }
+
+  componentWillReceiveProps() {
+    // invoked before a mounted component receiving props
+  }
+
+  shouldComponentUpdate() {
+    // takes next props and next state and allows a comparision between the current props
+    // returning false does not prevent child components from re-rendering when their state changes
+  }
+
+  componentWillUnmount() {
+    // remove the damn listeners!
+  }
+
   toggle = () => {
     this.setState({
       toggle: !this.state.toggle
