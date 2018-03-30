@@ -21,5 +21,22 @@
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb",
+      "standard",
+      "standard-react"
+    ],
+    "parser": "babel-eslint",
+    "plugins": [
+      "babel",
+      "react",
+      "promise"
+    ],
+    "env": {
+      "browser": true,
+      "jest": true
+    }
   }
 }

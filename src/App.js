@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import logo from './logo.svg';
-import './App.css';
+import logo from './assets/icons/logo.svg';
+import './css/App.css';
 
 class App extends Component {
   constructor(props) {
